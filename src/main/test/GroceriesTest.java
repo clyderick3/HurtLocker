@@ -81,10 +81,12 @@ public class GroceriesTest extends TestCase {
 
     public void testSetExpirationDate() {
         //Given
-
+        Groceries grocery = new Groceries("Milk",2.99,"Drink", "05/13/2022");
         //When
-
+        grocery.setExpirationDate("05/01/2022");
+        String expected = "05/01/2022";
+        String actual = grocery.getExpirationDate();
         //Then
-
+        Assert.assertEquals(expected, actual);
     }
 }
