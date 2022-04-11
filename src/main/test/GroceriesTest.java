@@ -1,13 +1,16 @@
 import junit.framework.TestCase;
+import org.junit.Assert;
 
 public class GroceriesTest extends TestCase {
 
     public void testTestGetName() {
         //Given
         Groceries grocery = new Groceries("Milk",2.99,"Drink", "05/13/2022");
+        String expected = "Milk";
         //When
-
+        String actual = grocery.getName();
         //Then
+        Assert.assertEquals(expected, actual);
 
     }
 
