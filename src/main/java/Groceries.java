@@ -1,11 +1,11 @@
 public class Groceries {
 
     private String name;
-    private float price;
+    private double price;
     private String type;
     private String expirationDate;
 
-    public Groceries(String name, float price, String type, String expirationDate){
+    public Groceries(String name, double price, String type, String expirationDate){
         this.name = name;
         this.price = price;
         this.type = type;
@@ -17,7 +17,7 @@ public class Groceries {
         return name;
     }
 
-    public float getPrice(){
+    public double getPrice(){
         return price;
     }
 
