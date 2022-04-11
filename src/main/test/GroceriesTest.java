@@ -27,11 +27,12 @@ public class GroceriesTest extends TestCase {
 
     public void testGetType() {
         //Given
-
+        Groceries grocery = new Groceries("Milk",2.99,"Drink", "05/13/2022");
+        String expected = "Drink";
         //When
-
+        String actual = grocery.getType();
         //Then
-
+        Assert.assertEquals(expected, actual);
     }
 
     public void testGetExpirationDate() {
