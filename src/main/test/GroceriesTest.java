@@ -16,10 +16,12 @@ public class GroceriesTest extends TestCase {
 
     public void testGetPrice() {
         //Given
-
+        Groceries grocery = new Groceries("Milk",2.99,"Drink", "05/13/2022");
+        Double expected = 2.99;
         //When
-
+        Double actual = grocery.getPrice();
         //Then
+        Assert.assertEquals(expected, actual);
 
     }
 
