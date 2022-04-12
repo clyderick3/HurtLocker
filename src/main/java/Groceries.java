@@ -44,4 +44,11 @@ public class Groceries {
     public void setExpirationDate(String expirationDate) {
         this.expirationDate = expirationDate;
     }
+
+    public boolean isNull(){
+        if (name.equals("") | type.equals("") | expirationDate.equals("")){
+            return true;
+        }
+        return false;
+    }
 }
