@@ -20,11 +20,4 @@ public class Main {
 
     }
 
-    public String fixMilk(String input){
-        try{
-            Pattern pattern = Pattern.compile("milk", Pattern.CASE_INSENSITIVE);
-            Matcher matcher = pattern.matcher(input);
-            String milk = matcher.
-        }
-    }
 }

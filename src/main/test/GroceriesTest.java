@@ -89,4 +89,13 @@ public class GroceriesTest extends TestCase {
         //Then
         Assert.assertEquals(expected, actual);
     }
+
+    public void testIsNull() {
+        //Given
+        Groceries groceries = new Groceries("", 0.00, "", "");
+        //When
+
+        //Then
+        Assert.assertTrue(groceries.isNull());
+    }
 }
