@@ -18,4 +18,9 @@ public class GroceryParser {
     public static List<String> kvString(String stringFound, String rawData){
         return new ArrayList<>(Arrays.asList(rawData.split(stringFound)));
     }
+
+    public static List<String> findKVInRawData(String rawData){
+        String stringFound = "[;^%*@!]";
+        return kvString(stringFound,rawData);
+    }
 }
