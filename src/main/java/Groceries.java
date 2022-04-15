@@ -13,6 +13,8 @@ public class Groceries {
 
     }
 
+    //add getters and setters just in case.
+
     public String getName(){
         return name;
     }
